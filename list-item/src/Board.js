@@ -8,7 +8,7 @@ function BoardItem(props) {
 function BoardList(props) {
     const numbers = props.numbers;
     const listItems = numbers.map((number) =>
-        <ListItem key={number.toString()}
+        <BoardItem key={number.toString()}
                   value={number} />
 
     );
